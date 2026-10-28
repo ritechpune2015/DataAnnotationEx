@@ -1,0 +1,50 @@
+﻿@model DataAnnotationEx.Models.Customer
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+      <h2> Create Product </h2>
+       <form asp-action="Create" method="Post">
+            <div>
+                <label asp-for="CustomerName"></label>
+                <div>
+                    <input asp-for="CustomerName"  />
+                </div>
+            </div>
+
+            <div>
+                <label asp-for="Address"></label>
+                <div>
+                    <textarea asp-for="Address">
+                    </textarea>
+                </div>
+            </div>
+        <div>
+            <label asp-for="CreationDate"></label>
+            <div>
+                <input asp-for="CreationDate" />
+            </div>
+        </div>
+
+        <div>
+            <label asp-for="Password"></label>
+            <div>
+                <input asp-for="Password" />
+            </div>
+        </div>
+
+        <div>
+            <label asp-for="Email"></label>
+            <div>
+                <input asp-for="Email" />
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Save" />
+        </div>
+       </form>
+    </body>
+    </html>
